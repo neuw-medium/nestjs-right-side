@@ -1,0 +1,5 @@
+{
+    "profile": "dev",
+    "description": "this profile's purpose is for the dynamic profile check on local, similarly we may have prod, etc.",
+    "port": 30012
+}
