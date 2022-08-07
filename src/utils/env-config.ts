@@ -1,7 +1,11 @@
 import * as defaultConfig from '../resources/env-config/base.json';
-import {textSync} from 'figlet';
+import * as packageDetails from '../../package.json';
 
 export default class EnvConfig {
+    
+    static getPackageDetails(): any {
+        return packageDetails;
+    }
     
     static getConfig():any {
         let config = defaultConfig;
