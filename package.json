@@ -8,6 +8,7 @@
   "scripts": {
     "keys-debug": "ts-node src/utils/JWKSManager.ts",
     "test-keys-debug": "ts-node src/utils/Test.ts",
+    "test-something": "ts-node src/utils/json-test.ts",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",

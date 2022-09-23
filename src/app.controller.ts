@@ -9,11 +9,11 @@ export class AppController {
     constructor(private readonly appService: AppService) {}
     
     @Post("/user")
-    getUser(@Headers("x-data-token") token: string): string {
+    getUser(@Headers("x-data-token") token: string): Promise<any> {
         this.logger.log({
             message: `x-data-token -- header = ${token}`,
             token: token
         });
-        return this.appService.getHello();
+        return this.appService.getDataEncrypted();
     }
 }
